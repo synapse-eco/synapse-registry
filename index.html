@@ -1,11 +1,163 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Synapse OS Repository</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Synapse Registry</title>
+
+    <style>
+        :root {
+            color-scheme: dark;
+            --bg: #090b10;
+            --surface: #121722;
+            --border: #283244;
+            --primary: #5fb3ff;
+            --text: #eef3f8;
+            --muted: #a4b2c3;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: Inter, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: auto;
+            padding: 72px 32px;
+        }
+
+        .hero {
+            margin-bottom: 48px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 1.15rem;
+        }
+
+        .card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 28px;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        code {
+            background: #1b2332;
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.95rem;
+        }
+
+        .notice {
+            border-left: 4px solid var(--primary);
+            padding-left: 16px;
+            color: var(--muted);
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Synapse OS Repository</h1>
-    <p>This is the official hosting site for Synapse OS packages and configurations.</p>
+
+<div class="container">
+
+    <section class="hero">
+        <h1>Synapse Registry</h1>
+
+        <p class="subtitle">
+            Official package registry for the Synapse ecosystem.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Overview</h2>
+
+        <p>
+            The <strong>Synapse Registry</strong> is the authoritative package source
+            for the Synapse operating system. It stores package databases, package
+            metadata, and distributable packages that are consumed by the Synapse
+            package management system.
+        </p>
+
+        <p>
+            This repository is published through <strong>GitHub Pages</strong> to
+            provide reliable static delivery of registry content.
+        </p>
+    </section>
+
+    <section class="card">
+        <h2>Purpose</h2>
+
+        <ul>
+            <li>Publish official Synapse package databases.</li>
+            <li>Host installable package archives.</li>
+            <li>Provide metadata used by the Synapse package manager.</li>
+            <li>Support package discovery, installation, and updates.</li>
+        </ul>
+    </section>
+
+    <section class="card">
+        <h2>Repository Status</h2>
+
+        <p>
+            This registry is currently under active development and will evolve
+            alongside the Synapse ecosystem as additional repositories, package
+            channels, and distribution infrastructure are introduced.
+        </p>
+    </section>
+
+    <section class="card notice">
+        <strong>Notice</strong><br><br>
+
+        This repository is part of the internal infrastructure of the Synapse
+        ecosystem. Most users will access its contents through the Synapse package
+        manager rather than by browsing this page directly.
+    </section>
+
+    <footer>
+        <strong>Synapse Registry</strong><br>
+        Official package registry for the Synapse ecosystem.<br>
+        Powered by GitHub Pages.
+    </footer>
+
+</div>
+
 </body>
 </html>
+
 
